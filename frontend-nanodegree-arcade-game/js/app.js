@@ -18,9 +18,6 @@ var startCharacter = function() {
 };
 
 
-
-
-
 // Enemies our player must avoid
 var Enemy = function() {
     // Variables applied to each of our instances go here,
@@ -35,8 +32,6 @@ var Enemy = function() {
     //determines the speed of the enemies
     this.speed = getRandomNumber(1,4)*100;
 };
-
-
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
