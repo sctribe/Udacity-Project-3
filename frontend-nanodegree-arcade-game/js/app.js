@@ -9,7 +9,7 @@ var gameWidth = 505;      //Width of game board. To check when enemies crossed
 //function to generate random integer. Added num1 to include minimum number if num1 !=0. This logic excludes num2 but includes num1.
 function getRandomNumber(num1, num2){
     return Math.floor((num2 - num1) * Math.random()) + num1; 
-};
+}
 
 //function to load a random character
 
@@ -76,7 +76,7 @@ Player.prototype.reset = function() {
     this.sprite = startCharacter();
     this.x = 200;
     this.y = 400;
-}
+};
 
 Player.prototype.update = function() {
     this.x = this.x;
@@ -122,7 +122,7 @@ var allEnemies = [];
 
 for(var i = 0; i<3; i++){
     allEnemies.push(new Enemy());
-};
+}
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
