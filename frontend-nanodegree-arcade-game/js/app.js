@@ -1,6 +1,6 @@
 //Array of all possible character assets
 
-var character = ["images/char-boy.png", "images/char-cat-girl.png","images/char-horn-girl.png", "images/char-pink-girl.png", "images/char-princess-girl.png"];
+var CHARACTER = ["images/char-boy.png", "images/char-cat-girl.png","images/char-horn-girl.png", "images/char-pink-girl.png", "images/char-princess-girl.png"];
 
 var enemyStartRow = [60, 140, 220];    //Height of row for enemies in pixels.
 var collisionThreshold = 30;      //Minimum number of px for collision. 
@@ -14,7 +14,7 @@ function getRandomNumber(num1, num2){
 //function to load a random character
 
 var startCharacter = function() {
-    return character[getRandomNumber(0, character.length)];
+    return CHARACTER[getRandomNumber(0, CHARACTER.length)];
 };
 
 
@@ -30,7 +30,7 @@ var Enemy = function() {
     //starts enemy y axis position on one of the 3 rows specified in enemyStartRow array
     this.y = enemyStartRow[getRandomNumber(0, enemyStartRow.length)]; 
     //determines the speed of the enemies
-    this.speed = getRandomNumber(1,4)*100;
+    this.speed = getRandomNumber(1, 4) * 100;
 };
 
 // Update the enemy's position, required method for game
